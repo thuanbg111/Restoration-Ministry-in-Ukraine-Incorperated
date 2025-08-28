@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Programs — RESTORATION MINISTRY IN UKRAINE INCORPORATED</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="RESTORATION MINISTRY IN UKRAINE INCORPORATED programs — partner support, relief, child and disability services.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="RESTORATION MINISTRY IN UKRAINE INCORPORATED logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container">
+  <h1>Programs</h1>
+  <div class="grid-3">
+    <article class="card">
+      <img src="images/education.jpg" alt="Partner Support">
+      <div class="card-body">
+        <h3>Partner Support</h3>
+        <p>Funding and supplies for Ukrainian charities serving poor, disabled, and foster children.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/relief.jpg" alt="Emergency Relief">
+      <div class="card-body">
+        <h3>Emergency Relief</h3>
+        <p>Food, hygiene kits, and essentials distributed through trusted local partners.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/community.jpg" alt="Foster & Disability Care">
+      <div class="card-body">
+        <h3>Foster &amp; Disability Care</h3>
+        <p>Mentoring and resources for foster families and children with special needs.</p>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> RESTORATION MINISTRY IN UKRAINE INCORPORATED</div>
+      <div class="small">A California Nonprofit Public Benefit Corporation (501(c)(3)) — EIN 82-1387545</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>Assist charitable organizations in Ukraine who work with poor, disabled, and foster children.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>7833 Gull Way Antelope, CA 95843<br>
+        <strong>Email:</strong> <a href="mailto:contact@restorationukraine.online">contact@restorationukraine.online</a><br>
+        <strong>Phone:</strong> <a href="tel:+10000000000">+1 (000) 000-0000</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
